@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelmarv Writing Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        header nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            background-image: url('your-hero-image.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .hero .text {
+            max-width: 50%;
+        }
+        .hero .text h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero .text p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .hero img {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services, .pricing, .testimonials, .guarantees, .stand-out, .disciplines, .contact {
+            margin-bottom: 40px;
+        }
+        .services h2, .pricing h2, .testimonials h2, .guarantees h2, .stand-out h2, .disciplines h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pricing .plans {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pricing .plan {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px 0;
+            width: 80%;
+            text-align: center;
+        }
+        .testimonials .clients {
+            display: flex;
+            justify-content: space-around;
+        }
+        .testimonials .client {
+            width: 45%;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .disciplines-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .discipline-item {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact form input, .contact form select, .contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .contact form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="your-logo.png" alt="Nelmarv Writing Agency Logo"> <!-- Replace with your logo -->
+            <h1>Nelmarv Writing Agency</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="samples.html">Samples</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="text">
+            <h1>Your Success Is Our Priority</h1>
+            <p>24/7 Support</p>
+            <p>Online and Essay Class Help</p>
+            <p><small>We are here for you</small></p>
+        </div>
+        <img src="your-portfolio-image.jpg" alt="Your Image"> <!-- Replace with your image -->
+    </section>
+
+    <section class="container services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Academic Research and Essay Writing</li>
+            <li>Normal Tests and Proctored Exams</li>
+            <li>Coursework and Online Help</li>
+            <li>Thesis Data Analysis R Programming</li>
+        </ul>
+    </section>
+
+    <section class="container pricing">
+        <h2>Pricing Plans</h2>
+        <div class="plans">
+            <div class="plan">
+                <h3>Silver Plan</h3>
+                <p>Up to 275 words; ideal for small essays and simple coursework.</p>
+            </div>
+            <div class="plan">
+                <h3>Gold Plan</h3>
+                <p>Up to 825 words; suitable for term papers and detailed assignments.</p>
+            </div>
+            <div class="plan">
+                <h3>Platinum Plan</h3>
+                <p>Up to 2,750 words; designed for research projects and dissertations.</p>
+            </div>
+            <div class="plan">
+                <h3>Custom Plan</h3>
+                <p>Tailored solutions for unique requirements.</p>
+            </div>
+        </div>
+        <button onclick="location.href='contact.html'">Choose Plan</button>
+    </section>
+
+    <section class="container testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="clients">
+            <div class="client">
+                <p>"Great service! Highly recommend."</p>
+                <p>- Client 1</p>
+            </div>
+            <div class="client">
+                <p>"Very professional and timely."</p>
+                <p>- Client 2</p>
+            </div>
+            <div class="client">
+                <p>"Excellent support and quality work."</p>
+                <p>- Client 3</p>
+            </div>
+            <div class="client">
+                <p>"Amazing experience overall."</p>
+                <p>- Client 4</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container guarantees">
+        <h2>Our Guarantees</h2>
+        <ul>
+            <li>On-time Delivery</li>
+            <li>100% Original Work</li>
+            <li>Money-back Guarantee</li>
+        </ul>
+    </section>
+
+    <section class="container stand-out">
+        <h2>Why Nelmarv Agency Stands Out</h2>
+        <p>We provide top-notch services with a focus on quality and customer satisfaction.</p>
+    </section>
+
+    <section class="container disciplines" id="disciplines">
+        <h2>Subjects We Cover</h2>
+        <p class="disciplines-intro">We offer academic writing services across a wide range of disciplines, from Humanities to Sciences and Engineering. Whatever your field of study, we have experts ready to assist you.</p>
+        <div class="disciplines-grid">
+            <div class="discipline-item">
+                <i class="fas fa-book"></i>
+                <h3>Humanities</h3>
+                <p>Philosophy, History, Literature, and more.</p>
+            </div>
+            <div class="discipline-item">
+                <i class="fas fa-flask"></i>
+                <h3>Sciences</h3>
+                <p>Biology, Chemistry, Physics, and Environmental Sciences.</p>
+            </div>
+            <div class="discipline-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Engineering</h3>
+                <p>Mechanical, Civil, Electrical, and Software Engineering.</p>
+            </div>
+            <div class="discipline-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Business</h3>
+                <p>Finance, Marketing, Economics, and Management.</p>
+            </div>
+            <div class="discipline-item">
+                <i class="fas fa-heartbeat"></i>
+                <h3>Health Sciences</h3>
+                <p>Medicine, Nursing, Public Health, and more.</p>
+            </div>
+            <div class="discipline-item">
+                <i class="fas fa-gavel"></i>
+                <h3>Law</h3>
+                <p>Criminal, Corporate, and International Law.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container contact">
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="service">Type of Service:</label>
+            <select id="service" name="service" required>
+                <option value="Essay Writing" selected>Essay Writing</option>
+                <option value="Proofreading & Editing">Proofreading & Editing</option>
+                <option value="Term Papers">Term Papers</option>
+                <option value="GED">GED</option>
+                <option value="TEAS">TEAS</option>
+                <option value="HESI">HESI</option>
+                <option value="Online Test">Online Test</option>
+                <option value="Coursework Help">Coursework Help</option>
+                <option value="Online Class Help">Online Class Help</option>
+                <option value="Research Assistance">Research Assistance</option>
+            </select>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="mailto:info@nelmarv.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://reddit.com" target="_blank"><i class="fab fa-reddit"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 Nelmarv Writing Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>
